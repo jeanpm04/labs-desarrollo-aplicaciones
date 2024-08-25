@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form {
+        margin: 0 auto;
+        width: 400px;
+        /* Esquema del formulario */
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+        }
+        ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        }
+        form li + li {
+        margin-top: 1em;
+        }
+        label {
+        /* Tamaño y alineación uniforme */
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+        }
+        input,textarea {
+        font: 1em sans-serif;
+        /* Tamaño uniforme del campo de texto */
+        width: 300px;
+        box-sizing: border-box;
+        /* Hacer coincidir los bordes del campo del formulario */
+        border: 1px solid #999;
+        }
+        input:focus,
+        textarea:focus {
+        /* Destacado adicional para elementos que tienen el cursor */
+        border-color: #000;
+        }
+        textarea {
+        /* Alinear los campos de texto multilínea con sus etiquetas */
+        vertical-align: top;
+        /* Proporcionar espacio para escribir texto */
+        height: 5em;
+        }
+        .button {
+        /* Alinear los botones con los campos de texto */
+        padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+        }
+        button {
+        /* Este margen adicional representa aproximadamente el mismo espacio que el
+        espacio entre las etiquetas y sus campos de texto */
+        margin-left: .5em;
+        }
+
+    </style>
+    <title>DA</title>
+</head>
+<body>
+    <em>
+        <a href="https://github.com" title="Entra a youtube" target="_blank">
+            hola mundo auuuu
+        </a>
+    </em>
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+            <li>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name">
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" id="mail" name="user_mail">
+            </li>
+            <li>
+                <label for="msg">Mensaje:</label>
+                <textarea name="user_message" id="msg"></textarea>
+            </li>
+            <li class="button">
+                <button type="submit">Enviar</button>
+            </li>
+        </ul>
+    </form>
+    <table border>
+        <tr>
+            <td>Hola soy tu primera celda</td>
+            <td>otra celda</td>
+            <td>mas celdas</td>
+            <td>todavia mas celdas</td>
+        </tr>
+        <tr>
+            <td>celdas a parte de las otras</td>
+            <td>mas otras aparte</td>
+            <td>otra mas</td>
+            <td>la ultima</td>
+        </tr>
+    </table>
+    <table border>
+        <colgroup>
+            <col style="background-color: yellow" span="2">
+        </colgroup>
+        <tr>
+            <th>Dato 1</th>
+            <th>Dato 2</th>
+        </tr>
+        <tr>
+            <td>Calcuta</td>
+            <td>Pizza</td>
+        </tr>
+        <tr>
+            <td>Robots</td>
+            <td>Jazz</td>
+        </tr>
+    </table>
+</body>
+</html>
