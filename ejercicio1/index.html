@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="descripcion" content="Portafolio" />
+    <meta name="keywords" content="Portafolio, HTML, CSS" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilos/estilos.css" />
+  </head>
+  <body>
+    <header id="yo" class="Encabezado">
+      <nav class="MenuPrincipal">
+        <ul class="MenuPrincipal-lista">
+          <li class="MenuPrincipal-item"><a class="MenuPrincipal-enlace" href="#yo">Yo</a></li>
+          <li class="MenuPrincipal-item"><a class="MenuPrincipal-enlace" href="#habilidades">Habilidades</a></li>
+          <li class="MenuPrincipal-item"><a class="MenuPrincipal-enlace" href="#experiencia">Experiencia</a></li>
+          <li class="MenuPrincipal-item"><a class="MenuPrincipal-enlace" href="#proyectos">Proyectos</a></li>
+          <li class="MenuPrincipal-item"><a class="MenuPrincipal-enlace" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <figure class="ContenedorImagen">
+        <img class="Imagen" src="img/avatar.png" alt="Imagen" />
+        <figcaption>
+          <a class="Enlace" href="#yo">@Nombre</a>
+        </figcaption>
+      </figure>
+      <p class="Nombre">Nombre</p>
+    </header>
+
+    <section id="habilidades" class="Habilidades">
+      <div class="u-contenedor">
+        <h2 class="u-titulo">Habilidades</h2>
+        <p>
+          Soy ingeniero de sistemas con una gran pasión por el desarrollo web. Tengo habilidades en programación, diseño de interfaces y creación de soluciones innovadoras.
+        </p>
+      </div>
+    </section>
+
+    <section id="experiencia" class="Experiencia">
+      <div class="u-contenedor">
+        <h2 class="u-titulo">Experiencia</h2>
+      </div>
+      <article class="Experiencia-item">
+        <img src="img/bcp.png" alt="BCP">
+        <figcaption>BCP - 2020 a 2021</figcaption>
+      </article>
+      <article class="Experiencia-item">
+        <img src="img/interbank.png" alt="Interbank">
+        <figcaption>Interbank - 2021 a 2022</figcaption>
+      </article>
+      <article class="Experiencia-item">
+        <img src="img/bbva.png" alt="BBVA">
+        <figcaption>BBVA Perú - 2022 a 2023</figcaption>
+      </article>
+    </section>
+
+    <section id="proyectos" class="Proyectos">
+      <div class="u-contenedor">
+        <h2 class="u-titulo">Proyectos</h2>
+      </div>
+      <article class="Proyectos-item">
+        <img src="img/proyecto1.png" alt="Proyecto 1">
+        <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+      </article>
+      <article class="Proyectos-item">
+        <img src="img/proyecto2.png" alt="Proyecto 2">
+        <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+      </article>
+      <article class="Proyectos-item">
+        <img src="img/proyecto3.png" alt="Proyecto 3">
+        <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+      </article>
+    </section>
+
+    <footer class="Pie">
+      <div class="Pie-izquierda">
+        <h3 class="Pie-titulo">Contacto</h3>
+        <p>Ponte en contacto con este formulario</p>
+      </div>
+      <form class="Pie-formulario">
+        <input type="text" placeholder="Nombre" class="Pie-formularioInput"/>
+        <input type="email" placeholder="Email" class="Pie-formularioInput"/>
+        <textarea placeholder="Motivo" class="Pie-textarea"></textarea>
+        <button type="submit" class="Pie-boton">Contactarme</button>
+      </form>
+    </footer>
+  </body>
+</html>

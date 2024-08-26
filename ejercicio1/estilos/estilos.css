@@ -1,0 +1,161 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+/* Utilidades */
+.u-titulo {
+  border-bottom: 2px dashed #ECDFCC;
+  color: #3C3D37;
+  font-weight: normal;
+  font-size: 1.5em;
+  padding-bottom: .5em;
+  text-align: center;
+}
+
+.u-contenedor {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* Menú Principal */
+.MenuPrincipal {
+  background: #1E201E;
+  text-align: center;
+  height: 3.75em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.MenuPrincipal-lista {
+  margin: 0;
+  padding: 0;
+}
+
+.MenuPrincipal-item {
+  display: inline-block;
+}
+
+.MenuPrincipal-enlace {
+  color: white;
+  text-decoration: none;
+  line-height: 3.75em;
+  margin-right: 1.5em;
+}
+
+/* Encabezado */
+.Encabezado {
+  margin-top: 3.75em;
+  background-color: #3C3D37;
+  text-align: center;
+  padding: 1.2em 0;
+}
+
+.ContenedorImagen {
+  margin: 0;
+}
+
+.Imagen {
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.Nombre,
+.Enlace {
+  color: white;
+}
+
+.Enlace {
+  font-size: 2.2em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Nombre {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Sección Habilidades */
+.Habilidades {
+  text-align: center;
+}
+
+/* Sección Experiencia */
+.Experiencia {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.Experiencia-item {
+  display: inline-block;
+  margin-right: 1.8em;
+  margin-bottom: 1.8em;
+}
+
+.Experiencia-item img {
+  width: 245px;
+}
+
+/* Sección Proyectos */
+.Proyectos {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.Proyectos-item {
+  display: inline-block;
+  margin-right: 1.8em;
+  margin-bottom: 1.8em;
+}
+
+/* Pie de Página */
+.Pie {
+  background-color: #697565;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.Pie-izquierda {
+  display: inline-block;
+  width: 32em;
+  text-align: center;
+}
+
+.Pie-titulo {
+  color: white;
+}
+
+.Pie-formulario {
+  text-align: center;
+  display: inline-block;
+}
+
+.Pie-formularioInput,
+.Pie-textarea {
+  background: white;
+  border: none;
+  display: block;
+  border-radius: 2em;
+  padding: .5em;
+  margin: 0 auto 1em;
+}
+
+.Pie-textarea {
+  resize: none;
+}
+
+.Pie-boton {
+  background: orange;
+  border-radius: 1em;
+  border: none;
+  color: white;
+  padding: .5em 1em;
+}
