@@ -1,0 +1,16 @@
+
+.box-percent {
+    width: 50%;
+    height: 200px;
+    background-color: #4682b4;
+}
+
+.text-em {
+    font-size: 2em;
+    color: #ff4500;
+}
+
+.text-rem {
+    font-size: 1.5rem;
+    color: #2e8b57;
+}

@@ -1,0 +1,12 @@
+
+.fondo-hex {
+    background-color: #0000FF;
+}
+
+.texto-hex {
+    color: #FF0000;
+}
+
+.borde-hex {
+    border: 2px solid #008000;
+}

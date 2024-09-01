@@ -1,0 +1,12 @@
+
+.fondo-hls {
+    background-color: hsl(240, 100%, 50%);
+}
+
+.texto-hls {
+    color: hsl(0, 100%, 50%);
+}
+
+.borde-hls {
+    border: 2px solid hsl(120, 100%, 25%);
+}

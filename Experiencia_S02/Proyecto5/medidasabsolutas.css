@@ -1,0 +1,17 @@
+
+.box-px {
+    width: 300px;
+    height: 200px;
+    background-color: #4682b4;
+}
+
+.text-pt {
+    font-size: 24pt;
+    color: #ff4500;
+}
+
+.box-cm {
+    width: 5cm;
+    height: 3cm;
+    background-color: #2e8b57;
+}

@@ -1,0 +1,28 @@
+/* Aplicando estilos usando selectores por ID */
+#main-header {
+    background-color: #32cd32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#main-title {
+    font-size: 2.5em;
+}
+
+#sub-title-1, #sub-title-2 {
+    color: #ff8c00;
+    font-size: 2em;
+}
+
+#paragraph-1, #paragraph-2 {
+    font-size: 1.2em;
+    color: #696969;
+}
+
+#main-footer {
+    background-color: #32cd32;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

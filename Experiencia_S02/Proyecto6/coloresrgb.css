@@ -1,0 +1,13 @@
+
+.fondo-rgb {
+    background-color: rgb(0, 0, 255);
+}
+
+.texto-rgb {
+    color: rgb(100%, 0%, 0%);
+}
+
+
+.borde-rgb {
+    border: 2px solid rgb(0, 128, 0);
+}

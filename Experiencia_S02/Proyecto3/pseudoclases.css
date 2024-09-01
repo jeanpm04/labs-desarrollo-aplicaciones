@@ -1,0 +1,41 @@
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+input:focus {
+    border-color: #ff4500;
+}
+
+input:disabled {
+    background-color: #ccc;
+    color: #666;
+}
+
+input:checked {
+    background-color: #4682b4;
+    color: white;
+}
+
+p:first-child {
+    font-weight: bold;
+}
+
+p:last-child {
+    font-style: italic;
+}
+
+p:nth-child(2) {
+    color: #2e8b57;
+}
