@@ -1,0 +1,26 @@
+/* 1. Seleccionar todos los párrafos que contienen "regex" en el texto */
+p:contains("regex") {
+    color: blue;
+    font-weight: bold;
+}
+
+/* 2. Seleccionar todos los elementos con una clase que comience con "highlight-" */
+[class^="highlight-"] {
+    background-color: yellow;
+}
+
+/* 3. Seleccionar todos los elementos con una clase que termine en "-error" */
+[class$="-error"] {
+    border: 1px solid red;
+}
+
+/* 4. Seleccionar todos los elementos con una clase que contenga "important" */
+[class*="important"] {
+    font-size: 1.5em;
+}
+
+/* 5. Seleccionar todos los encabezados de nivel 1 que tienen una clase específica */
+h1.important-title {
+    text-align: center;
+    color: green;
+}

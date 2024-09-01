@@ -1,0 +1,65 @@
+/* ACT 4 - a.2) */
+/* 1. Selector de elemento hijo directo */
+.container > p {
+    color: blue;
+}
+
+/* 2. Selector de elemento descendiente */
+.container p {
+    font-size: 16px;
+}
+
+/* 3. Selector de clase */
+.highlight {
+    background-color: yellow;
+}
+
+/* 4. Selector de ID */
+#main-header {
+    text-align: center;
+}
+
+/* 5. Selector de atributos */
+input[type="text"] {
+    border: 1px solid #ccc;
+}
+
+/* 6. Selector de pseudoclase :hover */
+button:hover {
+    background-color: green;
+    color: white;
+}
+
+/* 7. Selector de pseudoelemento ::before */
+p::before {
+    content: "Nota: ";
+    font-weight: bold;
+}
+
+/* ACT a.3) */
+
+/* 1. Selector de clase y tipo de elemento */
+.button.primary {
+    background-color: blue;
+    color: white;
+}
+
+/* 2. Selector de clase y pseudoclase */
+input[type="password"]:focus {
+    border-color: red;
+}
+
+/* 3. Selector de ID y clase */
+#footer .link {
+    color: gray;
+}
+
+/* 4. Selector de elemento y pseudoclase :nth-child */
+ul li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* 5. Selector de combinación de varios atributos */
+input[type="checkbox"][checked] {
+    accent-color: green;
+}

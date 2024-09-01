@@ -1,0 +1,38 @@
+/* Usando píxeles (px) */
+body {
+    font-size: 16px; /* Tamaño de fuente de 16 píxeles */
+}
+
+h1 {
+    font-size: 24px; /* Tamaño de fuente del encabezado h1 en 24 píxeles */
+    margin-bottom: 10px; /* Margen inferior de 10 píxeles */
+}
+
+p {
+    font-size: 14px; /* Tamaño de fuente del párrafo en 14 píxeles */
+    padding: 20px; /* Relleno de 20 píxeles */
+}
+
+/* Usando centímetros (cm) */
+div.container {
+    width: 10cm; /* Ancho del contenedor en 10 centímetros */
+    height: 5cm; /* Altura del contenedor en 5 centímetros */
+    border: 1px solid black; /* Borde de 1 píxel de grosor */
+}
+
+/* Usando milímetros (mm) */
+h2 {
+    font-size: 8mm; /* Tamaño de fuente del encabezado h2 en 8 milímetros */
+    margin-top: 5mm; /* Margen superior de 5 milímetros */
+}
+
+/* Usando puntos (pt) */
+h3 {
+    font-size: 18pt; /* Tamaño de fuente del encabezado h3 en 18 puntos */
+}
+
+button {
+    width: 80pt; /* Ancho del botón en 80 puntos */
+    height: 30pt; /* Altura del botón en 30 puntos */
+    font-size: 12pt; /* Tamaño de fuente del texto del botón en 12 puntos */
+}

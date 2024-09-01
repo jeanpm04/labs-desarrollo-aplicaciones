@@ -1,0 +1,42 @@
+.header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.nav-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.nav-a {
+    color: white;
+    text-decoration: none;
+}
+
+.introduccion {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+}
+
+.contenido {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

@@ -1,0 +1,42 @@
+body[class="fondo"] {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #279c2b;
+    border-radius: 4px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #6a1a14;
+    border-radius: 4px;
+}
+
+button[disabled] {
+    background-color: #4342af;
+    color: #a5a5a5;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+}
+
+a[title="Recuperar contraseña"] {
+    color: #439ffb;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+a[title="Recuperar contraseña"]:hover {
+    text-decoration: underline;
+}

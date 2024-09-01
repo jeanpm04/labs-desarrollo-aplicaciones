@@ -1,0 +1,29 @@
+body { 
+    background-color: hsl(210, 100%, 95%); 
+    font-family: Arial, sans-serif; 
+    opacity: 0.9;
+} 
+ 
+h1 { 
+    color: hsl(120, 60%, 50%); 
+    opacity: 0.8;
+} 
+ 
+p { 
+    color: hsl(45, 80%, 55%); 
+    opacity: 0.7;
+} 
+ 
+button { 
+    background-color: hsl(270, 70%, 60%); 
+    color: hsl(0, 0%, 98%); 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    opacity: 0.9;
+} 
+ 
+button:hover { 
+    background-color: hsl(180, 50%, 40%); 
+    opacity: 1;
+} 
