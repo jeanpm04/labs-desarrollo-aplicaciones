@@ -1,0 +1,31 @@
+/* Medidas Absolutas */
+/* Medida en píxeles */
+.abs-pixels {
+    float: left;
+    width: 200px;
+    height: 100px;
+    background-color: greenyellow;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+}
+/* Medida en centímetros */
+.abs-cm {
+    float: left;
+    width: 5cm;
+    height: 3cm;
+    background-color: goldenrod;
+    text-align: center;
+    line-height: 3cm;
+    margin: 10px;
+}
+/* Medida en pulgadas */
+.abs-inches {
+    float: left;
+    width: 2in;
+    height: 1in;
+    background-color: fuchsia;
+    text-align: center;
+    line-height: 1in;
+    margin: 10px;
+}

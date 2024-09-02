@@ -1,0 +1,33 @@
+/* Medidas Relativas */
+/* Medida en em */
+.rel-em {
+    float: left;
+    width: 10em;
+    height: 5em;
+    background-color: crimson;
+    text-align: center;
+    line-height: 5em;
+    margin: 10px;
+    font-size: 1em;
+}
+/* Medida en rem */
+.rel-rem {
+    float: left;
+    width: 20rem;
+    height: 10rem;
+    background-color: darkcyan;
+    text-align: center;
+    line-height: 10rem;
+    margin: 10px;
+    font-size: 1rem;
+}
+/* Medida en porcentaje */
+.rel-percent {
+    float: left;
+    width: 20%;
+    height: 30%;
+    background-color:  darkkhaki;
+    text-align: center;
+    line-height: 30vh;
+    margin: 10px auto;
+}

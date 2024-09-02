@@ -1,0 +1,12 @@
+/* pseudo clases*/
+a:hover {
+    text-decoration: none;
+}
+input:focus {
+    background-color: blanchedalmond;
+}
+/* pseudo elementos*/
+p::first-letter{
+    color: #000;
+    font-size: large;
+}

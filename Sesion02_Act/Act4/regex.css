@@ -1,0 +1,17 @@
+/* Selectores regex usando atributos */
+p[id^="email"] {
+    color: purple;
+}
+p[id$="telefono"] {
+    color: orange;
+}
+p[class*="regex-text"] {
+    font-style: italic;
+    color: darkblue;
+}
+p[id*="telefono"] {
+    font-weight: bold;
+}
+p[id^="email"], p[id^="telefono"] {
+    border-bottom: 1px dashed gray;
+}

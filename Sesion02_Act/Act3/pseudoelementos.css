@@ -1,0 +1,43 @@
+/* pseudo elementos*/
+/*p::first-line {
+    color: orange;
+    text-decoration: underline;
+  }*/
+p::first-letter {
+    color: red;
+}
+p::selection {
+    background: #21acde;
+    color: white;
+}
+ul li {
+    display: inline;
+}
+ul li::after {
+    color: #21acde;
+    content: " | ";
+    display: inline-block;
+}
+/* pseudo clases*/
+p:nth-child(1){ color: red; } 
+p:nth-child(2){ color: green; } 
+p:nth-child(4){ color: blue; } 
+a:hover{ /*Elemento apuntador pasa por encima*/
+    text-decoration: overline;
+  }
+  a:active{ /*Se activa cuando el usuario pulsa el elemento*/
+    background-color: yellow;
+  }
+  a:link{ /*No visitado por el usuario*/
+    color: green;
+  }
+  a:visited{ /*Visitado por el usuario*/
+    color: brown;
+  }
+  a:focus{
+    color: #21acde
+  }
+  
+[href="https://www.eniun.com"] {
+  font-size: 25px;
+}

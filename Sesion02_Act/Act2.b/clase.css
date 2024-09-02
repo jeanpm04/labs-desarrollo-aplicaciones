@@ -1,0 +1,16 @@
+.titulo{
+    color:chocolate;
+    background-color: brown;
+}
+.subtitulo{
+    color: blue;
+    font-size: 30px;
+}
+li:hover{
+    color:blueviolet;
+    font-size: 20px;
+}
+.parrafo{
+    text-align: center;
+    
+}

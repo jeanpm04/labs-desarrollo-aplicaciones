@@ -1,0 +1,31 @@
+/* Herencia */
+section.herencia .padre {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+section.herencia .padre .hijo {
+    font-size: 20px;
+    color: inherit;/* Herencia del color del padre */
+}
+
+/* Cascada */
+h1 {
+    color: darkgreen;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+section.herencia p {
+    padding: 10px;
+    margin: 10px;
+    background-color: lightyellow;
+}
+
+section.herencia .padre .hijo {
+    background-color: lightgray;
+    margin: 20px;
+}
