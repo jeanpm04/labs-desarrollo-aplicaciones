@@ -1,0 +1,55 @@
+h1 {
+    color: black;
+    font-size: larger;
+    }
+h2 {
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aqua;
+}
+p {
+    color: #000;
+    font-weight: 100;
+}
+
+.hed2{
+    background-color: pink;
+}
+
+#idhed2{
+    background-color: chartreuse;
+}
+#div1{
+    background-color: red;
+}
+
+[href]{
+    color: green;
+}
+[href="http://www.udemy.com"]{
+    color: violet;
+}
+a:hover{
+    color: rebeccapurple;
+}
+.anchor2{
+    color: goldenrod;
+}
+button:hover{
+    background-color: grey;
+}
+input:focus{
+    background-color: blanchedalmond;
+}
+ul li:nth-child(2){
+    color: red;
+}
+.pa3::first-letter{
+    color: blue;
+    font-size: large;
+}
+#idpa3::first-line{
+    color: pink;
+}
+
+    

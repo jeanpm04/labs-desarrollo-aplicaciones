@@ -1,0 +1,66 @@
+h2{
+    background-color: bisque;
+}
+#cm1{
+    font-size: 1cm;
+}
+#cm2{
+    font-size: 0.5cm;
+}
+#cm3{
+    font-size: 0.7cm;
+}
+#mm1{
+    font-size: 10mm;
+}
+#mm2{
+    font-size: 5mm;
+}
+#mm3{
+    font-size: 1mm;
+}
+#q1{
+    font-size: 10q;
+}
+#q2{
+    font-size: 20q;
+}
+#q3{
+    font-size: 30q;
+}
+#in1{
+    font-size: 1in;
+}
+#in2{
+    font-size: 0.5in;
+}
+#in3{
+    font-size: 0.2in;
+}
+#p1{
+    font-size: 1pc;
+}
+#p2{
+    font-size: 3pc;
+}
+#p3{
+    font-size: 5pc;
+}
+#pu1{
+    font-size: 1pt;
+}
+#pu2{
+    font-size: 5pt;
+}
+#pu3{
+    font-size: 10pt;
+}
+#px1{
+    font-size: 5px;
+}
+#px2{
+    font-size: 10px;
+}
+#px3{
+    font-size: 15px;
+}

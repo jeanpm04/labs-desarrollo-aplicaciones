@@ -1,0 +1,79 @@
+body{
+    background-color: bisque;
+}
+section{
+    background-color: blanchedalmond;
+    max-width: 1100PX;
+    width: 100%;
+    
+}
+#inicio{
+    height: 10vh;
+    background-color: aqua;
+    background-size: cover;
+    background-position: center center; 
+    width: 100%; max-width: 1100px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; margin: auto;
+}
+div{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    padding: 10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.divInicio{
+    background-color: rgb(255, 191, 62);
+    background-size: cover;
+    background-position: center center; 
+    width: 100%; max-width: 1100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px 10px;
+}
+.listaInicio{
+    list-style: none;
+    display: flex;
+    font-size: 40px;
+}
+.listaInicio > li{
+    text-decoration: none;
+    color: white;
+    justify-content: space-around;
+    margin: 0 12px;
+}
+.listaInicio > li > a{
+    text-decoration: none;
+    margin: 15px;
+}
+h2{
+    background-color: lightgray;
+    color: rgb(13, 13, 67);
+}
+h3{
+    color: rgb(13, 5, 116);
+}
+#resumen{
+    background-color: rgb(234, 243, 255);
+    width: 100%; max-width: 1100px; 
+    justify-content: center; align-items: center; 
+    margin: auto;
+    display: flex;
+}
+#masinfo{
+    width: 100%;
+    max-width: 1100px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    background-color: rgb(206, 206, 231);
+}
+a{
+    text-decoration: none;
+}
