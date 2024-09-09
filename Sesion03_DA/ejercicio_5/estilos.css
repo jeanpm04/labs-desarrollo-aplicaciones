@@ -1,0 +1,89 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+li{
+    text-decoration: none;
+}
+.navbar{
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: white;
+    box-sizing: border-box;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+a{
+    color: black;
+}
+nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding-right: 30px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+main{
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    max-width: 70%;
+    align-self: center;
+}
+main h1{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+main p{
+    font-size: 1.5rem;
+}
+main button{
+    padding: 16px;
+    font-weight: 600;
+    border: none;
+    background-color: black;
+    color: white;
+    width: 600px;
+}
+main div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(250px,1fr));
+    gap: 10px;
+}
+.gridContainer li{
+    list-style: none;
+}
+.gridContainer li:nth-child(3n+1){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.gridContainer img{
+    width: 100%;
+    height: auto;
+    display: block;
+}

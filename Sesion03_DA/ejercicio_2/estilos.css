@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    color: white;
+    height: 350px;
+}
+header section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+header p{
+    text-align: center;
+    font-size: 25px;
+}
+header h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+header button{
+    text-align: center;
+    background-color: grey;
+    padding: 8px;
+    font-size: 30px;
+    font-weight: bold;
+    color: inherit;
+    margin-top: 20px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+main article{
+    width: clamp(300px,50%,400px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+article h2{
+    font-size: 21px;
+    margin-bottom: 45px;
+}
+article p{
+    max-width: 200px;
+    margin-bottom: 100px;
+}
+/* media */
+@media(max-width:900px){
+    main article{
+        width: 280px ;
+    }
+    header p{
+        font-size: 22px;
+    }
+    header{
+        height: 400px;
+    }
+}
+@media (max-width:480px){
+    main article{
+        width: 460px ;
+    }
+    header{
+        height: 500px;
+    }
+    header p{
+        font-size: 22px;
+    }
+    header h1{
+        margin-top: 20px;
+        line-height: 85px;
+        font-weight: 100;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        text-align: center;
+    }
+    header button{
+        background-color: #606061;
+        padding: 8px;
+        font-size: 30px;
+        font-weight: bold;
+        color: inherit;
+        margin-top: 10px;
+    }
+}
