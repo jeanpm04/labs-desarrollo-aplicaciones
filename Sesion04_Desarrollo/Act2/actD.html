@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var answer = 42;
+    answer = 'Gracias por todo el pescado...';
+    parseInt("F", 16);
+    parseInt("17", 8);
+    parseInt("15", 10);
+    parseInt(15.99, 10);
+    parseInt("FXX123", 16);
+    parseInt("1111", 2);
+    parseInt("15*3", 10);
+    parseInt("12", 13);
+
+    parseInt("Hello", 8); //Devolvera NaN porque "Hello" no es un numero valido.
+    parseInt("0x7", 10);  // Devolvera NaN porque 0x se usa para bases hexadecimales no decimales.
+    parseInt("546", 2); // Devolvera NaN porque 546 no es un numero binario valido.
+
+    var howMany = 10;
+    alert("howMany.toString() is " + howMany.toString()); // displays "10"
+    alert("45 .toString() is " + 45 .toString()); //displays "45"
+    var x = 7;
+    alert(x.toString(2)) // Displays "111"
+
+</script>
+</html>

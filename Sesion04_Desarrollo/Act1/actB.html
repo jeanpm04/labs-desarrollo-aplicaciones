@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Usando JavaScript</h1>
+    
+    <div id="mensaje">Click en el boton para cambiar el mensaje</div>
+    
+    <button id="miBoton">Cambiar Mensaje</button>
+    <button id="resetearBoton">Restablecer Mensaje</button>
+    
+    <script>
+        function cambiarMensaje() {
+            document.getElementById('mensaje').textContent = "El mensaje se cambio";
+        }
+
+        function restablecerMensaje() {
+            document.getElementById('mensaje').textContent = "Click en el boton para cambiar el mensaje";
+        }
+
+        document.getElementById('miBoton').addEventListener('click', cambiarMensaje);
+        document.getElementById('resetearBoton').addEventListener('click', restablecerMensaje);
+
+        console.log("Hola Mundo");
+    </script>
+</body>
+</html>
