@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Temperatura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/conversor.js" defer></script>
+  </head>
+  <body>
+    <h1 class="titulo">Conversor de Temperatura</h1>
+    <div class="contenido">
+      <br><label for="temp">Ingrese la temperatura:</label></br>
+      <br><input type="text" id="temp" name="temp" /></br>
+
+      <br><label for="unidad">Seleccione la unidad:</label></br>
+      <br>
+        <select id="unidad" name="unidad">
+          <option value="Celsius">Celsius</option>
+          <option value="Fahrenheit">Fahrenheit</option>
+        </select>
+      </br>
+      
+      <br><button type="button" id="convertirBtn" onclick="convertirTemperatura()">Convertir</button></br>
+
+      <h2>Resultado</h2>
+      <br><div>Conversión:</div><span id="resultado"></span></br>
+    </div>
+  </body>
+</html>
