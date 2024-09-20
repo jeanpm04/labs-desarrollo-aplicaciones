@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Ejemplos</h1>
+
+    <script>
+        // Uso de variables y constantes
+        const PI = 3.1416; // Una constante
+        let radio = 5; // Variable local (let)
+        var area = PI * radio * radio; // Variable global (var)
+        console.log("El área de un círculo con radio 5 es: " + area);
+
+        // Elevación de variables (hoisting)
+        console.log(x === undefined); // true, porque 'x' es elevada
+        var x = 3; // Inicialización después del uso
+
+        var myvar = 'my value';
+        (function() {
+            console.log(myvar); // undefined debido al hoisting
+            var myvar = 'valor local'; // Se eleva la declaración pero no el valor
+        })();
+
+        // Uso de console.log y scope
+        console.log("Valor global de x: " + x); // 3
+        {
+            let x = 10;
+            console.log("Valor de x dentro del bloque: " + x); // 10
+        }
+        console.log("Valor de x fuera del bloque: " + x); // 3
+
+        // Uso de tipos de datos y cambio de tipos de datos
+        var answer = 42;
+        console.log("Tipo de 'answer' antes de cambiarlo: " + typeof answer); // number
+        answer = 'Gracias por todo el pescado...';
+        console.log("Tipo de 'answer' después de cambiarlo: " + typeof answer); // string
+
+        // Ejemplos de parseInt con diferentes bases numéricas
+        console.log(parseInt("F", 16)); // 15
+        console.log(parseInt("17", 8)); // 15
+        console.log(parseInt("15", 10)); // 15
+        console.log(parseInt(15.99, 10)); // 15
+        console.log(parseInt("FXX123", 16)); // 15
+        console.log(parseInt("1111", 2)); // 15
+        console.log(parseInt("15*3", 10)); // 15
+        console.log(parseInt("12", 13)); // 15
+        console.log(parseInt("Hello", 8)); // NaN (No es un número)
+        console.log(parseInt("0x7", 10)); // 0
+        console.log(parseInt("546", 2)); // NaN (no válido para binarios)
+
+        // Ejemplos de .toString()
+        var howMany = 10;
+        console.log("howMany.toString() es: " + howMany.toString()); // "10"
+        console.log("45 .toString() es: " + (45).toString()); // "45"
+        var y = 7;
+        console.log("y.toString(2) es: " + y.toString(2)); // "111" en binario
+    </script>
+</body>
+</html>
