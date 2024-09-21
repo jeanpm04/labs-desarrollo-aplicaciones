@@ -1,0 +1,54 @@
+// Variables de colores y fuentes
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: 'Helvetica, sans-serif';
+
+// Mixin para bordes redondeados
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+// Estilos generales
+body {
+    font-family: $font-stack;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 4rem 0;
+
+    a {
+        background-color: $secondary-color;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        @include border-radius(5px);
+        &:hover {
+            background-color: darken($secondary-color, 10%);
+        }
+    }
+}
+
+// Estilos para secciones
+section {
+    padding: 4rem 0;
+
+    h2 {
+        margin-bottom: 2rem;
+        color: $primary-color;
+    }
+
+    p {
+        font-size: 1.1rem;
+        color: darken($primary-color, 20%);
+    }
+}
+
+footer {
+    background-color: $primary-color;
+    padding: 2rem 0;
+    p {
+        margin: 0;
+    }
+}

@@ -1,0 +1,61 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: 'Arial', sans-serif;
+
+// Mixin para bordes redondeados
+@mixin rounded-borders($radius: 5px) {
+  border-radius: $radius;
+}
+
+// Estilos generales
+body {
+  font-family: $font-stack;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+// Contenedor principal
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  @include rounded-borders(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  // Título
+  h1 {
+    color: $primary-color;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  // Párrafo
+  p {
+    color: darken($primary-color, 10%);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  // Enlace clickeable
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $secondary-color;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    @include rounded-borders;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: lighten($secondary-color, 10%);
+    }
+  }
+}

@@ -1,0 +1,73 @@
+// Variables de colores
+$navbar-bg: #2c3e50;
+$link-color: #ecf0f1;
+$link-hover-color: #3498db;
+$dropdown-bg: #34495e;
+
+// Estilos personalizados para la navbar
+.navbar-custom {
+    background-color: $navbar-bg;
+    .nav-link {
+        color: $link-color;
+        font-size: 1.1rem;
+        &:hover {
+            color: $link-hover-color;
+        }
+    }
+    .dropdown-menu {
+        background-color: $dropdown-bg;
+        a {
+            color: $link-color;
+            &:hover {
+                color: $link-hover-color;
+                background-color: darken($dropdown-bg, 10%);
+            }
+        }
+    }
+}
+
+// Mixin para animaciones suaves
+@mixin fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@mixin fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+// Keyframes para las animaciones
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+// Aplicar animaciones a los menús desplegables
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}

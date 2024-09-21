@@ -1,0 +1,39 @@
+body {
+  font-family: "Helvetica, sans-serif";
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 4rem 0;
+}
+header a {
+  background-color: #2ecc71;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+header a:hover {
+  background-color: #25a25a;
+}
+
+section {
+  padding: 4rem 0;
+}
+section h2 {
+  margin-bottom: 2rem;
+  color: #3498db;
+}
+section p {
+  font-size: 1.1rem;
+  color: #196090;
+}
+
+footer {
+  background-color: #3498db;
+  padding: 2rem 0;
+}
+footer p {
+  margin: 0;
+}/*# sourceMappingURL=custom-styles.css.map */
