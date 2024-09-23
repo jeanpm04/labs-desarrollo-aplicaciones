@@ -1,0 +1,132 @@
+// Variables de color
+$primary-bg: #1e3799;
+$primary-text: #ffffff;
+$secondary-bg: #0c2461;
+$hover-color: lighten($primary-bg, 15%);
+$accent-color: #f8c291;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f6fa;
+  color: #2d3436;
+}
+
+// Estilo de la barra de navegación
+.navbar {
+  background-color: $primary-bg !important;
+  .navbar-brand {
+    color: $primary-text !important;
+    font-size: 1.8rem;
+  }
+
+  .nav-link {
+    color: $primary-text !important;
+
+    &:hover {
+      color: $hover-color !important;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $secondary-bg;
+    .dropdown-item {
+      color: $primary-text !important;
+
+      &:hover {
+        background-color: $hover-color;
+        color: $primary-bg;
+      }
+    }
+  }
+
+  .btn-outline-light {
+    color: $primary-text;
+    border-color: $primary-text;
+
+    &:hover {
+      background-color: $hover-color;
+      color: $primary-bg;
+    }
+  }
+}
+
+// Estilo del slider
+.carousel-inner {
+  .item {
+    img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
+  }
+
+  .carousel-control {
+    span {
+      font-size: 2rem;
+      color: $primary-text;
+    }
+  }
+}
+
+// Estilo para la galería de productos
+.container {
+  margin: 40px 0;
+}
+
+.thumbnail {
+  background-color: #ffffff;
+  border: 1px solid $primary-bg;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .caption {
+    padding: 15px;
+
+    h3 {
+      color: $primary-bg;
+    }
+
+    p {
+      color: #636e72;
+    }
+
+    .btn-success {
+      background-color: $accent-color !important;
+      border: none;
+      &:hover {
+        background-color: darken($accent-color, 10%);
+      }
+    }
+
+    .btn-primary {
+      background-color: $primary-bg !important;
+      &:hover {
+        background-color: darken($primary-bg, 10%);
+      }
+    }
+  }
+}
+
+// Modal estilo
+.modal-content {
+  background-color: lighten($secondary-bg, 10%);
+  color: $primary-text;
+  
+  .modal-header {
+    background-color: $primary-bg;
+    .close {
+      color: $primary-text;
+    }
+  }
+
+  .modal-body {
+    p {
+      color: #dfe6e9;
+    }
+  }
+}

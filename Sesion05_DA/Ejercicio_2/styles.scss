@@ -1,0 +1,65 @@
+// Variables
+$nav-background: #2c3e50;
+$nav-link-color: #ecf0f1;
+$nav-link-hover-color: #f39c12;
+$nav-height: 60px;
+$font-family: 'Arial', sans-serif;
+$base-font-size: 16px;
+$padding-horizontal: 20px;
+
+// Mixins
+@mixin box-shadow($color: rgba(0, 0, 0, 0.1), $blur: 5px) {
+  box-shadow: 0 2px $blur $color;
+}
+
+@mixin transition($property: all, $duration: 0.3s, $timing-function: ease) {
+  transition: $property $duration $timing-function;
+}
+
+// Funciones
+@function darken-color($color, $amount: 10%) {
+  @return darken($color, $amount);
+}
+
+@function lighten-color($color, $amount: 10%) {
+  @return lighten($color, $amount);
+}
+
+// Barra de navegación
+.navbar {
+  background-color: $nav-background;
+  height: $nav-height;
+  font-family: $font-family;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $padding-horizontal;
+  @include box-shadow();
+
+  .navbar-brand {
+    font-size: 1.5em;
+    color: $nav-link-color;
+    text-decoration: none;
+    @include transition(color);
+
+    &:hover {
+      color: lighten-color($nav-link-color, 15%);
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+
+    a {
+      color: $nav-link-color;
+      text-decoration: none;
+      font-size: $base-font-size;
+      @include transition(color);
+
+      &:hover {
+        color: $nav-link-hover-color;
+      }
+    }
+  }
+}
