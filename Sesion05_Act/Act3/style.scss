@@ -1,0 +1,85 @@
+// Variables de colores
+$navbar-bg: #34495e;
+$link-color: #ffffff;
+$link-hover-color: #1abc9c;
+$dropdown-bg: #2c3e50;
+
+// Estilos generales
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+nav.navbar {
+  background-color: $navbar-bg;
+  padding: 15px;
+
+  .logo a {
+    color: $link-color;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-left: 20px;
+      position: relative;
+
+      a {
+        color: $link-color;
+        text-decoration: none;
+        font-size: 1.2rem;
+
+        &:hover {
+          color: $link-hover-color;
+        }
+      }
+
+      // Estilos para dropdown
+      &.dropdown {
+        .dropdown-toggle::after {
+          content: " ▼";
+          font-size: 0.8rem;
+        }
+
+        .dropdown-menu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: $dropdown-bg;
+          list-style: none;
+          padding: 10px 0;
+          margin: 0;
+          min-width: 160px;
+
+          li {
+            margin: 0;
+
+            a {
+              display: block;
+              padding: 10px 20px;
+              white-space: nowrap;
+              &:hover {
+                background-color: lighten($dropdown-bg, 10%);
+              }
+            }
+          }
+        }
+
+        &:hover .dropdown-menu {
+          display: block;
+        }
+      }
+    }
+  }
+}

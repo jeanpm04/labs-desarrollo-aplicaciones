@@ -1,0 +1,71 @@
+// Variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$light-color: #f8f9fa;
+$dark-color: #343a40;
+$font-stack: 'Arial, sans-serif';
+
+// Mixin para bordes redondeados
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+// Estilos generales
+body {
+    font-family: $font-stack;
+    background-color: $light-color;
+}
+
+// Encabezado
+header {
+    background-color: $light-color;
+    padding: 50px 0;
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        color: $secondary-color;
+    }
+
+    a {
+        margin-top: 20px;
+        @include border-radius(5px);
+        background-color: $primary-color;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+        }
+    }
+}
+
+// Secciones
+section {
+    padding: 40px 0;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1rem;
+        color: $secondary-color;
+    }
+}
+
+// Pie de página
+footer {
+    background-color: $dark-color;
+    color: white;
+    padding: 20px 0;
+
+    p {
+        margin: 0;
+    }
+}

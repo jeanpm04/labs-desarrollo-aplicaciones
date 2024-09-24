@@ -1,0 +1,65 @@
+// Variables
+$primary-color: #e74c3c;
+$secondary-color: #8e44ad;
+$font-family: 'Helvetica', sans-serif;
+$background-color: #f9f9f9;
+$padding: 20px;
+
+// Mixin para sombras
+@mixin box-shadow($shadow) {
+  box-shadow: $shadow;
+}
+
+// Estilos generales
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+}
+
+// Contenedor principal
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: $padding;
+  background-color: white;
+  border: 1px solid lighten($primary-color, 30%);
+  @include box-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+
+  // Título
+  h1 {
+    color: $primary-color;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  // Párrafo
+  p {
+    color: darken($primary-color, 10%);
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    text-align: justify;
+  }
+
+  // Enlace clickeable
+  a {
+    padding: 12px 25px;
+    background-color: $secondary-color;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    @include box-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: lighten($secondary-color, 10%);
+    }
+  }
+}

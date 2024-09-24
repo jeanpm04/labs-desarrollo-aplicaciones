@@ -1,0 +1,48 @@
+body {
+  font-family: "Arial, sans-serif";
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+header p {
+  font-size: 1.25rem;
+  color: #6c757d;
+}
+header a {
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+header a:hover {
+  background-color: #0062cc;
+}
+
+section {
+  padding: 40px 0;
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+section p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+footer p {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
