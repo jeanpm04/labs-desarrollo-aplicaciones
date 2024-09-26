@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 2</title>
+    <script>
+        
+        var variable1 = 1;
+        let variable2 = 10;
+        const constante1 = 2;
+        console.log("Numero random: "+(variable1+variable2+constante1))
+
+        //Elvación de variables
+        console.log(x===undefined); //true
+        var x = 3;
+
+        var myvar = "my value";
+        (function (){
+            console.log(myvar); //undefined
+            var myvar = 'valro local';
+        }) ();
+
+        console.log("X: "+x);
+        //un bloque { }
+        {
+            var x = 10;
+            console.log("X dentro del bloque: "+x);
+        }
+        console.log("X fuera del bloque "+x);
+        
+        //d
+        var answer = 42;
+        answer = 'Gracias por todo el pescado...';
+
+        console.log(parseInt("F", 16)); 
+        console.log(parseInt("17", 8));
+        console.log(parseInt("15", 10));
+        console.log(parseInt(15.99, 10));
+        console.log(parseInt("FXX123", 16));
+        console.log(parseInt("1111", 2));
+        console.log(parseInt("15*3", 10));
+        console.log(parseInt("12", 13));
+        console.log(parseInt("Hello", 8));
+        console.log(parseInt("0x7", 10));
+        console.log(parseInt("567", 2));
+
+        //7
+        var howMany = 10;
+        alert("howMany.toString() is " + howMany.toString()); // displays "10"
+        alert("45 .toString() is " + 45 .toString()); //displays "45"
+        var x = 7;
+        alert(x.toString(2)) // Displays "111"
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Experiencia 2</h1>
+    </div>
+</body>
+</html>

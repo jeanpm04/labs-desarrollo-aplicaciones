@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 1</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Declaración de código en línea</h1>
+        <p id="texto">Este es el texto 1</p>
+        <button onclick="alert('¡Hola Mundo!')">Mostrará mensaje alerta</button>
+    </div>
+
+    <hr>
+    <div class="container">
+        <h1>Declaración de código usando etiquetas script</h1>
+        <script>
+            function MostrarMensaje(){
+                alert("HOLA MUNDO LOL");
+            }
+        </script>
+        <p id="texto">Este es el texto 2</p>
+        <button onclick="MostrarMensaje()">Se mostrará un mensaje</button>
+    </div>
+
+    <div class="container">
+        <h1>Declaración de código usando un archivo vinculado</h1>
+        <script src="script.js"></script>
+        <p id="texto">Este es el texto 3</p>
+        <button onclick="MostrarMensaje()">Mostrar algo</button>
+    </div>
+    
+</body>
+</html>
