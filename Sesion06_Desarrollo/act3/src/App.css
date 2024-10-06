@@ -1,0 +1,8 @@
+.App {
+border: solid red;
+border-radius: 30px;
+}
+
+.App h2{
+    margin-left: 20px;
+}

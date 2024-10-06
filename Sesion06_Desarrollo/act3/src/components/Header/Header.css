@@ -1,0 +1,9 @@
+/*Header.css*/
+.header {
+    background-color: #c316169d;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }  

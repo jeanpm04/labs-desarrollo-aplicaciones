@@ -1,0 +1,9 @@
+/*Footer.css*/
+.footer {
+    background-color: grey;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }  
