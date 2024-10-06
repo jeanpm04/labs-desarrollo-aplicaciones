@@ -1,0 +1,49 @@
+.App {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+nav {
+  background-color: #457b9d;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.lista-libros {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.libro {
+  background-color: #f1faee;
+  border: 1px solid #457b9d;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  width: 200px;
+}
+
+.libro img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #457b9d;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #1d3557;
+}
