@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos desde MySQL</title>
+</head>
+<body>
+    <h1>Lista de Empleados</h1>
+    <table id="empleados">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Puesto</th>
+        </tr>
+    </table>
+    
+    <script>
+        // Obtener datos de empleados desde el servidor
+        fetch('/empleados')
+            .then(response => response.json())
+            .then(data => {
+                const table = document.getElementById('empleados');
+                data.forEach(emp => {
+                    const row = table.insertRow();
+                    row.insertCell(0).textContent = emp.id;
+                    row.insertCell(1).textContent = emp.nombre;
+                    row.insertCell(2).textContent = emp.puesto;
+                });
+            });
+    </script>
+</body>
+</html>
